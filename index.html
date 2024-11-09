@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <div id="main">
+    <div id="cursor"></div>
+    <div id="calculator">
+        <div class="text-field" id="display">0</div>
+        <div class="button-row">
+            <button class="clear-button" onclick="clearDisplay()">C</button>
+            <button class="button" onclick="backspace()">&larr;</button>
+            <button class="button no-margin" onclick="append_to_equation('/')">&divide;</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="append_to_equation('7')">7</button>
+            <button class="button" onclick="append_to_equation('8')">8</button>
+            <button class="button" onclick="append_to_equation('9')">9</button>
+            <button class="button no-margin" onclick="append_to_equation('*')">x</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="append_to_equation('4')">4</button>
+            <button class="button" onclick="append_to_equation('5')">5</button>
+            <button class="button" onclick="append_to_equation('6')">6</button>
+            <button class="button no-margin" onclick="append_to_equation('+')">+</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="append_to_equation('1')">1</button>
+            <button class="button" onclick="append_to_equation('2')">2</button>
+            <button class="button" onclick="append_to_equation('3')">3</button>
+            <button class="button no-margin" onclick="append_to_equation('-')">-</button>
+        </div>
+        <div class="button-row">
+            <button class="button" onclick="append_to_equation('.')">.</button>
+            <button class="button" onclick="append_to_equation('0')">0</button>
+            <button class="result-button no-margin" onclick="calculate()">=</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
